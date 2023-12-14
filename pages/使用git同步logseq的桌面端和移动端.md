@@ -17,4 +17,4 @@
 	- ![1702565038686.png](../assets/1702565038686_1702565041757_0.png){:height 322, :width 640}
 	- logseq上也能正常显示数据。
 	- ![image.png](../assets/image_1702565251904_0.png){:height 99, :width 164}
-	- 接下来要实现的是手机如何频繁拉取和推送Github上的数据呢🤔？最直接的方法是直接在Termux上进行
+	- 接下来要实现的是手机如何频繁拉取和推送Github上的数据呢🤔？最直接的方法是直接在Termux上进行拉取（pull）和推送（add -> commit -> push）的操作，但每次记录笔记都要手动
