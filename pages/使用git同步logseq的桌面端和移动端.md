@@ -14,5 +14,6 @@
 	- ![1702564634923.png](../assets/1702564634923_1702564650977_0.png){:height 310, :width 549}
 	- 这个报错的大概意思就是logseq不能访问Termux的内部空间...正当我寻觅了网上很多方案都无果时，突然想到Termux可以访问外部空间。
 	- > In the Termux terminal, type `termux-setup-storage` to allow Termux access to your internal storage and/or SD card
-	- 既然如此，我们可以在Termux的外部空间（也就是sdcard）建立一个git本地仓库，经过一番操作之后，
+	- 既然如此，我们可以在Termux的外部空间（也就是sdcard）建立一个git本地仓库，经过一番操作之后，成功在手机上拉取github的数据✌！
+	-
 -
