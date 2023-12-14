@@ -9,7 +9,7 @@
 	- 此时可以在logseq的设置中勾选`auto commit`及设置间隔的时间，logseq的变更就会自动地推送到github上。
 	- 然后就是移动端的部分了，桌面端的部署对有使用过github的读者来说应该不会太困难，但是移动端我们要怎么部署呢？移动端上没有终端，就没有使用git的载体。于是我们接下来的工作就是建立在一个叫**Termux**的移动端终端上，通过Termux来实现类似桌面端的部署。
 	- Termux可以通过Github上发行版本的apk进行下载，也可以先下载一个叫F-Droid的应用商店，然后在里面下载Termux。下载完Termux后，神奇的一幕就发生了，我们熟悉的小黑框出现在了小小的手机屏幕上
-		- ![1702563626355.png](../assets/1702563626355_1702563629515_0.png){:height 300, :width 289}
+		- ![1702563626355.png](../assets/1702563626355_1702563629515_0.png){:height 287, :width 251}
 	- Termux下载完成后，我们需要输入`termux-setup-storage`创建一个用来存放Termux下载文件的内部空间，以及连接外部空间，接下来就可以给手机安装git了。进行到这里，我以为按照[Logseq-Git-Sync-101(Android)](https://github.com/CharlesChiuGit/Logseq-Git-Sync-101/wiki/For-Android-users)的指引直接在Termux的内部空间创建一个文件夹然后将logseq指向这个地方就能进行git的拉取和推送，但但我打开logseq进行链接的时候，出现了下面的报错😭
 	- ![1702564634923.png](../assets/1702564634923_1702564650977_0.png){:height 232, :width 292}
 	- 这个报错的大概意思就是logseq不能访问Termux的内部空间...正当我寻觅了网上很多方案都无果时，突然想到Termux可以访问外部空间。既然如此，我们可以在Termux的外部空间（也就是sdcard）建立一个git的本地仓库文件夹，再从logseq中import这个本地仓库的数据。经过一番操作之后，成功在手机上拉取github的数据✌！
@@ -47,7 +47,7 @@
 		  logseq.order-list-type:: number
 		- 没有被次要问题带偏，着力解决目标问题
 		  logseq.order-list-type:: number
-		- 笔记能标准化输入了，希望
+		- 笔记能标准化输入了，希望这套工作流能好好用起来
 		  logseq.order-list-type:: number
 		- logseq.order-list-type:: number
 -
