@@ -26,7 +26,10 @@
 	  id:: 657b199b-a8d7-481d-a322-63b30c0bcb38
 	- push前如果没有pull的话可能会造成冲突，解决方法是使用git merge，但方法的原理不是很清楚。
 	  logseq.order-list-type:: number
-	- 桌面端有时候会显示
+	- 桌面端有时候会显示commit失败的情况。
 	  logseq.order-list-type:: number
+-
+- 总结
+	- 本来早上只是想记录一下掘金闪念上的笔记，但无意间
 -
 	-
