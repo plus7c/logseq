@@ -15,6 +15,6 @@
 	- 这个报错的大概意思就是logseq不能访问Termux的内部空间...正当我寻觅了网上很多方案都无果时，突然想到Termux可以访问外部空间。既然如此，我们可以在Termux的外部空间（也就是sdcard）建立一个git的本地仓库文件夹，再从logseq中import这个本地仓库的数据。经过一番操作之后，成功在手机上拉取github的数据✌！
 	- > In the Termux terminal, type `termux-setup-storage` to allow Termux access to your internal storage and/or SD card
 	- ![1702565038686.png](../assets/1702565038686_1702565041757_0.png){:height 322, :width 640}
-	- logseq上也能正常显示。
+	- logseq上也能正常显示数据。
 	- ![image.png](../assets/image_1702565251904_0.png){:height 99, :width 164}
--
+	- 接下来要实现的是手机如何频繁拉取github上的数据
