@@ -20,6 +20,8 @@
 	- 接下来要实现的是手机如何频繁拉取和推送Github上的数据呢🤔？最直接的方法是直接在Termux上进行拉取（pull）和推送（add -> commit -> push）的操作，但每次记录笔记都要手动pull和push显然会消磨记笔记的冲动。于是使用了[Logseq-Git-Sync-101(Android)](https://github.com/CharlesChiuGit/Logseq-Git-Sync-101/wiki/For-Android-users)中提到的Termux Widget方法，简单来讲就是提前写好脚本放到Termux内部空间的.shortcuts文件夹中，然后在手机的空白位置创建一个点击即运行`pull`和`push`的小部件。
 	- ![04cde4d0e2d9fcbc8e4eaf18dfd8343.jpg](../assets/04cde4d0e2d9fcbc8e4eaf18dfd8343_1702565785407_0.jpg){:height 97, :width 239}
 	- 移动端的工作流是在记录笔记前先`pull`桌面端的笔记，然后记录笔记，记录完之后再`push`到GitHub上。而桌面端因为设置了自动commit和推送，所以只需手动进行pull操作即可，而我平时记录笔记主要也是用桌面端的logseq比较多，移动端主要是用来记录灵感、复习笔记和充分利用logseq的记忆卡片功能。
--
+- 有待完善的地方：
+	- 手机进行push的时候每次都要输入github的用户名和密码，目前是将其保存到了输入法的常用语中，省略
+	  logseq.order-list-type:: number
 -
 	-
