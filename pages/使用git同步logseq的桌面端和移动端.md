@@ -6,4 +6,4 @@
 - ### 实现步骤
 	- 首先是创建一个GitHub仓库，一开始用的是private，但后面为了方便移动端推送又改为了public
 	- 接着是对电脑端的logseq进行代码管理，在logseq根目录`git init`，然后在`.git`目录中添加`post-commit`和`pre-commit`这两个文件，目的是为了让logseq获得commit的能力，具体的流程可参阅[Logseq-Git-Sync-101](https://github.com/CharlesChiuGit/Logseq-Git-Sync-101?tab=readme-ov-file)。
-	- 此时可以在logseq的设置中勾选`auto commit`及设置间隔的时间，logseq的
+	- 此时可以在logseq的设置中勾选`auto commit`及设置间隔的时间，logseq的变更就会自动地推送到github上。
