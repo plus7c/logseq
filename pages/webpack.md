@@ -1,0 +1,9 @@
+- webpack的本质是一个打包工具，根据代码的内容解析模块依赖，帮助开发者把多个模块的代码打包。
+- webpack会从入口文件开始解析依赖，默认入口文件是index.js，也可使用entry字段进行配置
+- loader用来解析处理不同类型的文件，如babel用来解析js，图片使用url-loader等等
+- plugin用于处理除loader外的构建任务
+- webpack最后构建出来的是静态文件
+- tree shaking用来剔除没有用的代码
+- splitchunk将大文件划分为指定大小的小文件
+- 三大前端框架都有相应的webpack配置
+-

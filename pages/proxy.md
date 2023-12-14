@@ -1,0 +1,4 @@
+- proxy和Object.defineProperty都是用来实现数据响应式的方法，前者是创建一个proxy对象，这个对象里面有getter和setter等方法，当访问对象对应的属性时，会触发对应的方法实现响应式。而defineProperty只能对对象的属性进行方法的定义，如果需要针对对象，需要遍历对象中的所有属性。所以defineProperty不能直接应用于数组
+-
+- proxy是一个对象，用于代理其他对象，proxy中有get、set等等执行函数，可以间接地管理被代理对象的属性，比如说get的时候打印出完整的信息，set的时候打印新旧数据的情况等等，同时也可以在get和set中实现数据的响应式。
+-

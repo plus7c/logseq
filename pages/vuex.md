@@ -1,0 +1,7 @@
+- vuex有state、mutation、action。
+	- mutation用来处理状态变更。
+	- action用来处理异步操作，通过在action中调用mutation实现
+	- getter用来获取公共数据
+- 可以将store划分成不同的模块
+- 可以用...mapState、...mapMutation、...mapAction的方法来调用，更加直观
+-

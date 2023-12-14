@@ -1,0 +1,2 @@
+- redux中有一个reducer函数，借鉴了Javascript中array的reduce方法，利用当前状态和actions来修改状态的值，并贯穿整个生命周期
+- redux和react hook 鱼与熊掌可兼得 功能上没有重叠 redux负责状态管理 而react hook取代了class组件和呈现prop模式

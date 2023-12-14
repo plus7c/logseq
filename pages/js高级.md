@@ -1,0 +1,4 @@
+- BOM是Browser Object Model 与网页的内容无关
+- DOM是Document Object Model 与网页的内容相关
+- ![image.png](../assets/image_1689140417897_0.png)
+-

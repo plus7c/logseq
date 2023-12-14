@@ -1,0 +1,4 @@
+- 先扎实好基础，回顾HTML和CSS 《head first HTML & CSS》
+- 看youtube上的英文教材，第一手资料
+- 红宝书的学习
+- react是手动挡，vue是自动挡，先了解react。

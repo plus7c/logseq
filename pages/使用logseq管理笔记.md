@@ -1,0 +1,3 @@
+- 创建一个dashboard，在dashboard中可以利用query查看任务列表、查看与某个话题相关的内容
+- {{video https://www.youtube.com/watch?v=DxoGJBb1mWQ}}
+-
