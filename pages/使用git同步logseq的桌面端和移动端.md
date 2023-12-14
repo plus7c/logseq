@@ -5,4 +5,4 @@
 -
 - ### 实现步骤
 	- 第一步是创建一个GitHub仓库，一开始用的是private，但后面为了方便移动端推送又改为了public
-	- 接着是对电脑端的logseq进行代码管理，在logseq根目录`git init`，然后在`.git`
+	- 接着是对电脑端的logseq进行代码管理，在logseq根目录`git init`，然后在`.git`目录中添加`post-commit`和
