@@ -8,4 +8,4 @@
 	- 接着是对电脑端的logseq进行代码管理，在logseq根目录`git init`，再设置好远程仓库的地址，然后在`.git`目录中添加`post-commit`和`pre-commit`这两个文件，目的是为了让logseq获得commit和push的能力，具体的流程可参阅[Logseq-Git-Sync-101](https://github.com/CharlesChiuGit/Logseq-Git-Sync-101?tab=readme-ov-file)。
 	- 此时可以在logseq的设置中勾选`auto commit`及设置间隔的时间，logseq的变更就会自动地推送到github上。
 	- 然后就是移动端的部分了，桌面端的部署对有使用过github的读者来说应该不会太困难，但是移动端我们要怎么部署呢？移动端上没有终端，就没有使用git的载体。于是我们接下来的工作就是建立在一个叫**Termux**的移动端终端上，通过Termux来实现类似桌面端的部署。
-	- Termux可以通过Github上发行版本的pkg
+	- Termux可以通过Github上发行版本的apk进行下载，也可以先下载一个叫F-Droid的应用商店，然后在里面下载Termux。
