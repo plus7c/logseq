@@ -17,10 +17,10 @@
 	- ![1702565038686.png](../assets/1702565038686_1702565041757_0.png){:height 226, :width 339}
 	- logseq上也能正常显示数据。
 	- ![image.png](../assets/image_1702565251904_0.png){:height 242, :width 166}
-	- 接下来要实现的是手机如何频繁拉取和推送Github上的数据呢🤔？最直接的方法是直接在Termux上进行拉取（pull）和推送（add -> commit -> push）的操作，但每次记录笔记都要手动pull和push显然会消磨记笔记的冲动。于是使用了[Logseq-Git-Sync-101(Android)](https://github.com/CharlesChiuGit/Logseq-Git-Sync-101/wiki/For-Android-users)中提到的Termux Widget方法，简单来讲就是提前写好脚本放到Termux内部空间的.shortcuts文件夹中，然后在手机的空白位置创建一个点击即运行`pull`和`push`的小部件。
+	- 最后要考虑的问题是，手机如何频繁拉取和推送Github上的数据呢🤔？最直接的方法是直接在Termux上进行拉取（pull）和推送（add -> commit -> push）的操作，但每次记录笔记都要手动pull和push显然会消磨记笔记的冲动。于是使用了[Logseq-Git-Sync-101(Android)](https://github.com/CharlesChiuGit/Logseq-Git-Sync-101/wiki/For-Android-users)中提到的Termux Widget方法，简单来讲就是提前写好脚本放到Termux内部空间的.shortcuts文件夹中，然后在手机的空白位置创建一个点击即运行`pull`和`push`的小部件。
 	- ![04cde4d0e2d9fcbc8e4eaf18dfd8343.jpg](../assets/04cde4d0e2d9fcbc8e4eaf18dfd8343_1702565785407_0.jpg){:height 161, :width 196}
 	- 移动端的工作流是在记录笔记前先`pull`桌面端的笔记，然后记录笔记，记录完之后再`push`到GitHub上。而桌面端因为设置了自动commit和推送，所以只需手动进行pull操作即可，而我平时记录笔记主要也是用桌面端的logseq比较多，移动端主要是用来记录灵感、复习笔记和充分利用logseq的记忆卡片功能。
-- 有待完善的地方：
+- ## 有待完善的地方
 	- 手机进行push的时候每次都要输入github的用户名和token凭证，目前是将其保存到了输入法的常用语中，使用起来体验不是很好。
 	  logseq.order-list-type:: number
 	  id:: 657b199b-a8d7-481d-a322-63b30c0bcb38
@@ -29,8 +29,11 @@
 	- 桌面端有时候会显示commit失败的情况。
 	  logseq.order-list-type:: number
 -
-- 总结
-	- 本来早上只是想记录一下掘金闪念上的笔记，但无意间发现了logseq的一些隐藏功能和移动端版本，于是就有了构建这套两端同步工作流（p2p？）的想法，中途踩了不少的坑，比如说
+- ## 总结
+	- 本来早上只是想记录一下掘金闪念上的笔记，但无意间发现了logseq的一些隐藏功能和移动端版本，于是就有了构建这套两端同步工作流（p2p？）的想法。
+		-
+		- 中途踩了不少的坑，比如说
+		  logseq.order-list-type:: number
 		- 移动端logseq的无法链接Termux的内部空间
 		  logseq.order-list-type:: number
 		- 写pull和push脚本时候的路径问题，用//就可以指向根目录
