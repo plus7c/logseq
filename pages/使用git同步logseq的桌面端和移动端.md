@@ -10,6 +10,8 @@
 	- 然后就是移动端的部分了，桌面端的部署对有使用过github的读者来说应该不会太困难，但是移动端我们要怎么部署呢？移动端上没有终端，就没有使用git的载体。于是我们接下来的工作就是建立在一个叫**Termux**的移动端终端上，通过Termux来实现类似桌面端的部署。
 	- Termux可以通过Github上发行版本的apk进行下载，也可以先下载一个叫F-Droid的应用商店，然后在里面下载Termux。下载完Termux后，神奇的一幕就发生了，我们熟悉的小黑框出现在了小小的手机屏幕上
 		- ![1702563626355.png](../assets/1702563626355_1702563629515_0.png){:height 286, :width 267}
-	- Termux下载完成后，我们需要输入`termux-setup-storage`创建一个用来存放Termux下载文件的内部空间，以及连接外部空间，接下来就可以给手机安装git了。进行到这里，我以为按照[Logseq-Git-Sync-101(Windows)](https://github.com/CharlesChiuGit/Logseq-Git-Sync-101/wiki/For-Android-users)的指引直接在Termux的内部空间创建一个文件夹然后将logseq指向这个地方就能进行git的拉取和推送，但但我打开logseq进行链接的时候，
+	- Termux下载完成后，我们需要输入`termux-setup-storage`创建一个用来存放Termux下载文件的内部空间，以及连接外部空间，接下来就可以给手机安装git了。进行到这里，我以为按照[Logseq-Git-Sync-101(Windows)](https://github.com/CharlesChiuGit/Logseq-Git-Sync-101/wiki/For-Android-users)的指引直接在Termux的内部空间创建一个文件夹然后将logseq指向这个地方就能进行git的拉取和推送，但但我打开logseq进行链接的时候，出现了下面的报错😭
+	- ![1702564634923.png](../assets/1702564634923_1702564650977_0.png){:height 310, :width 549}
+	- 这个
 -
 -
