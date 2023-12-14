@@ -31,16 +31,14 @@
 -
 - ## 总结
 	- 本来早上只是想记录一下掘金闪念上的笔记，但无意间发现了logseq的一些隐藏功能和移动端版本，于是就有了构建这套两端同步工作流（p2p？）的想法。
-		-
-		- 中途踩了不少的坑，比如说
-		  logseq.order-list-type:: number
+		- ### 中途踩了不少的坑：
 		- 移动端logseq的无法链接Termux的内部空间
 		  logseq.order-list-type:: number
 		- 写pull和push脚本时候的路径问题，用//就可以指向根目录
 		  logseq.order-list-type:: number
 		- 移动端git push的时候身份验证问题，要设置token而不能用secret。
 		  logseq.order-list-type:: number
-	- 但同时也收获了不少：
+	- ### 但同时也收获了不少：
 		- Termux基于linux，linux的命令行操作更熟练了
 		  logseq.order-list-type:: number
 		- 相比以前能快速定位问题，阅读英文文档相对没那么吃力了
@@ -48,6 +46,8 @@
 		- 对手机的文件管理系统有了进一步的了解
 		  logseq.order-list-type:: number
 		- 没有被次要问题带偏，着力解决目标问题
+		  logseq.order-list-type:: number
+		- 笔记能标准化输入了，希望
 		  logseq.order-list-type:: number
 		- logseq.order-list-type:: number
 -
