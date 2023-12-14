@@ -11,5 +11,6 @@
 	- Termux可以通过Github上发行版本的apk进行下载，也可以先下载一个叫F-Droid的应用商店，然后在里面下载Termux。下载完Termux后，神奇的一幕就发生了，我们熟悉的小黑框出现在了小小的手机屏幕上
 		- ![1702563626355.png](../assets/1702563626355_1702563629515_0.png){:height 286, :width 267}
 	- Termux下载完成后，我们需要输入`termux-setup-storage`创建一个用来存放Termux下载文件的地方，也就是一块相对独立的存储空间，
+	- ![0ae799244914382f88424fd493dd4fa.jpg](../assets/0ae799244914382f88424fd493dd4fa_1702564004145_0.jpg){:height 119, :width 322}
 -
 -
