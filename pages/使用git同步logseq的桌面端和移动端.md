@@ -12,6 +12,6 @@
 		- ![1702563626355.png](../assets/1702563626355_1702563629515_0.png){:height 286, :width 267}
 	- Termux下载完成后，我们需要输入`termux-setup-storage`创建一个用来存放Termux下载文件的内部空间，以及连接外部空间，接下来就可以给手机安装git了。进行到这里，我以为按照[Logseq-Git-Sync-101(Windows)](https://github.com/CharlesChiuGit/Logseq-Git-Sync-101/wiki/For-Android-users)的指引直接在Termux的内部空间创建一个文件夹然后将logseq指向这个地方就能进行git的拉取和推送，但但我打开logseq进行链接的时候，出现了下面的报错😭
 	- ![1702564634923.png](../assets/1702564634923_1702564650977_0.png){:height 310, :width 549}
-	- 这个报错的大概意思就是logseq不能访问Termux的内部空间...正当我寻觅了网上很多方案都无果时，突然想到，
+	- 这个报错的大概意思就是logseq不能访问Termux的内部空间...正当我寻觅了网上很多方案都无果时，突然想到Termux可以访问外部空间
 -
 -
