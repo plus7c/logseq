@@ -21,7 +21,10 @@
 	- ![04cde4d0e2d9fcbc8e4eaf18dfd8343.jpg](../assets/04cde4d0e2d9fcbc8e4eaf18dfd8343_1702565785407_0.jpg){:height 97, :width 239}
 	- 移动端的工作流是在记录笔记前先`pull`桌面端的笔记，然后记录笔记，记录完之后再`push`到GitHub上。而桌面端因为设置了自动commit和推送，所以只需手动进行pull操作即可，而我平时记录笔记主要也是用桌面端的logseq比较多，移动端主要是用来记录灵感、复习笔记和充分利用logseq的记忆卡片功能。
 - 有待完善的地方：
-	- 手机进行push的时候每次都要输入github的用户名和密码，目前是将其保存到了输入法的常用语中，省略
+	- 手机进行push的时候每次都要输入github的用户名和token凭证，目前是将其保存到了输入法的常用语中，使用起来体验不是很好。
+	  logseq.order-list-type:: number
+	  id:: 657b199b-a8d7-481d-a322-63b30c0bcb38
+	- push前如果没有
 	  logseq.order-list-type:: number
 -
 	-
