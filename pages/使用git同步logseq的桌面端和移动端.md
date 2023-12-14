@@ -24,7 +24,9 @@
 	- 手机进行push的时候每次都要输入github的用户名和token凭证，目前是将其保存到了输入法的常用语中，使用起来体验不是很好。
 	  logseq.order-list-type:: number
 	  id:: 657b199b-a8d7-481d-a322-63b30c0bcb38
-	- push前如果没有
+	- push前如果没有pull的话可能会造成冲突，解决方法是使用git merge，但方法的原理不是很清楚。
+	  logseq.order-list-type:: number
+	- 桌面端有时候会显示
 	  logseq.order-list-type:: number
 -
 	-
