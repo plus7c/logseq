@@ -44,6 +44,8 @@
 		  logseq.order-list-type:: number
 		- 对手机的文件管理系统有了进一步的了解
 		  logseq.order-list-type:: number
+		- 没有被次要问题带偏，着力解决目标问题
+		  logseq.order-list-type:: number
 		- logseq.order-list-type:: number
 -
 	-
