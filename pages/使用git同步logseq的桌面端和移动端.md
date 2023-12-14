@@ -40,7 +40,9 @@
 	- 但同时也收获了不少：
 		- Termux基于linux，linux的命令行操作更熟练了
 		  logseq.order-list-type:: number
-		- 相比以前能快速定位问题，阅读英文文档也能尽量不用翻译了
+		- 相比以前能快速定位问题，阅读英文文档相对没那么吃力了
+		  logseq.order-list-type:: number
+		- 对手机的文件管理系统有了进一步的了解
 		  logseq.order-list-type:: number
 		- logseq.order-list-type:: number
 -
