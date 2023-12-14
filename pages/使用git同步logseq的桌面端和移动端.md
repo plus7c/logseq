@@ -30,6 +30,10 @@
 	  logseq.order-list-type:: number
 -
 - 总结
-	- 本来早上只是想记录一下掘金闪念上的笔记，但无意间发现了logseq的一些隐藏功能和移动端版本，于是就有了构建这套两端同步工作流（p2p？）的想法，中途
+	- 本来早上只是想记录一下掘金闪念上的笔记，但无意间发现了logseq的一些隐藏功能和移动端版本，于是就有了构建这套两端同步工作流（p2p？）的想法，中途踩了不少的坑，比如说
+		- 移动端logseq的无法链接Termux的内部空间
+		  logseq.order-list-type:: number
+		- 写pull
+		  logseq.order-list-type:: number
 -
 	-
