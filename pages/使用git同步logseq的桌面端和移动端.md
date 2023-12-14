@@ -35,6 +35,7 @@
 		  logseq.order-list-type:: number
 		- 写pull和push脚本时候的路径问题，用//就可以指向根目录
 		  logseq.order-list-type:: number
-		- logseq.order-list-type:: number
+		- 移动端git push的时候身份验证问题，要设置token而不能用
+		  logseq.order-list-type:: number
 -
 	-
