@@ -45,31 +45,32 @@
 		- 当react树的根节点的类型不一样时，用新生成DOM结点直接取代旧的DOM结点，否则继续递归遍历
 		- 当在兄弟结点中插入一个新结点时，仅发生了一处变更，但传统diff算法会重新匹配其余结点，性能低下，所以给兄弟结点添加key，相当于给每个结点一个ID，在进行diff对比的时候免去多余的匹配。
 		- 但应注意的是，尽量避免使用可迭代数组或对象的index作为ID，否则当数组或对象发生变更时，diff对比会发生混乱，例如：
-		- ```
-		  const arr = [1,2,3]
-		  
-		  <div>
-		  	{arr.map((val,index)=>{
-		      	<child key={index}></child>
-		      })}
-		  </div>
-		  
-		  arr:    1,2,3
-		  index:  0,1,2
-		  key:    a,b,c
-		  
-		  arr:    4,2,1
-		  index:  0,1,2
-		  key:    e,b,a
-		  
-		  用index的情况：
-		  4,2,1
-		  0,1,2
-		  
-		  用key的情况：
-		  1,2,4
-		  a,b,e
-		  
-		  
-		  ```
+		  collapsed:: true
+			- ```
+			  const arr = [1,2,3]
+			  
+			  <div>
+			  	{arr.map((val,index)=>{
+			      	<child key={index}></child>
+			      })}
+			  </div>
+			  
+			  arr:    1,2,3
+			  index:  0,1,2
+			  key:    a,b,c
+			  
+			  arr:    4,2,1
+			  index:  0,1,2
+			  key:    e,b,a
+			  
+			  用index的情况：
+			  4,2,1
+			  0,1,2
+			  
+			  用key的情况：
+			  1,2,4
+			  a,b,e
+			  
+			  
+			  ```
 		-
