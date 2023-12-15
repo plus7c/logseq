@@ -1,0 +1,2 @@
+- Mobx是除了redux之外的react状态管理器，和vuex的原理相似
+	-
