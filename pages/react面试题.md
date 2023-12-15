@@ -77,5 +77,6 @@
 		- keys的设置需要稳定，可预测（自增）和唯一性，否则会造成子组件性能下降和状态丢失。
 -
 - React的生命周期
+	- ![](https://cdn.nlark.com/yuque/0/2021/png/1500604/1611914193870-a5a93315-a094-40aa-959a-e3e3c58c8a96.png){:height 368, :width 586}
 	-
-	- ![image.png](../assets/image_1702610861882_0.png){:height 215, :width 335}
+	-
