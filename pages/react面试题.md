@@ -39,7 +39,8 @@
 		- 使用场景不同，类组件可用于有生命周期的场景，以及用到继承这个特点的一些设计模式。而如果使用react hooks，则使用函数组件。官方更推荐使用函数组件。
 		- 性能优化上，类组件依靠shouldComponentUpdate阻断渲染提升性能，而函数组件依靠react.memo缓存渲染结果提升性能。
 		-
-- Rreconciliation（和解算法）
+- Rreconciliation（和解算法） #card
+  collapsed:: true
 	- 背景：在比较两棵树的所有节点是否相同时，递归遍历的时间复杂度是O(n^3)，而一棵react树中有很多结点，这样比较显然是性能低下的，因此提出了启发式算法来进行DOM tree diff。
 	- 两大原则：
 		- 当react树的根节点的类型不一样时，用新生成DOM结点直接取代旧的DOM结点，否则继续递归遍历
@@ -75,4 +76,6 @@
 			  ```
 		- keys的设置需要稳定，可预测（自增）和唯一性，否则会造成子组件性能下降和状态丢失。
 -
-- ![image.png](../assets/image_1702610861882_0.png){:height 215, :width 335}
+- React的生命周期
+	-
+	- ![image.png](../assets/image_1702610861882_0.png){:height 215, :width 335}
