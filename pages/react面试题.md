@@ -49,9 +49,9 @@
 		  const arr = [1,2,3]
 		  
 		  <div>
-		  	<li key={item.index}></li>
-		  	<li></li>
-		  	<li></li>
+		  	{arr.map((val,index)=>{
+		      	<li key={index}></li>
+		      })}
 		  </div>
 		  
 		  <div>
