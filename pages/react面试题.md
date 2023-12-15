@@ -1,5 +1,36 @@
 - Mobx是除了redux之外的react状态管理器，和vuex的原理相似
-	-
+-
+- 高阶函数（Higher-order function），至少满足下列一个条件的函数 #card #react
+  collapsed:: true
+	- 1、接受一个或多个函数作为输入
+	  2、输出一个函数
+	  在React中，高阶组件即接受一个或多个组件作为参数并且返回一个组件，本质也就是一个函数，并不是一个组件，例如：
+	  ```
+	  const EnhancedComponent = highOrderComponent(WrappedComponent);
+	  ```
+	  上述代码中，该函数接受一个组件 WrappedComponent 作为参数，返回加工过的新组件 EnhancedComponent
+	- 高阶组件的这种实现方式，本质上是一个**装饰者**设计模式
+- 如何提高组件的渲染效率 #card #react
+  collapsed:: true
+	- 类组件：
+		- 1. 继承PureComponent
+		  2. 使用shouldComponentUpdate优化
+	- 函数组件：
+		- 1. memo模拟PureComponent
+		  2. 使用useMemo缓存变量
+		  3. 使用useCallback缓存函数
+		  4. 循环添加key, key最好用数组项的唯一值，不推荐用 index
+- 函数式组件有没有生命周期？#card
+  collapsed:: true
+	- 它没有提供生命周期概念，不像 class 组件继承 React.component，可以让你使用生命周期以及特意强调相关概念
+- 使用Hooks要遵守哪些原则？ #card
+  collapsed:: true
+	- 1. 只在最顶层使用 Hook
+	- 2. 不要在循环，条件或嵌套函数中调用 Hook， 确保总是在你的 React 函数的最顶层调用他们。
+	- 3. 只在 React 函数中调用 Hook
+	- 4. 不要在普通的 JavaScript 函数中调用 Hook。你可以：
+	- ✅ 在 React 的函数组件中调用 Hook
+	  ✅ 在自定义 Hook 中调用其他 Hook
 - 类组件和函数组件的异同？ #card
   collapsed:: true
 	- 相同点：都是构建UI的最小单元，它们之间可以相互转化，但在开发过程中没有这个必要，在闭包的性能上两者没有太大的区别
