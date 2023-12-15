@@ -50,15 +50,16 @@
 		  
 		  <div>
 		  	{arr.map((val,index)=>{
-		      	<li key={index}></li>
+		      	<child key={index}></child>
 		      })}
 		  </div>
 		  
-		  <div>
-		  	<li></li>
-		  	<li></li>
-		  	<li></li>
-		  </div>
+		  arr:    1,2,3
+		  index:  0,1,2
+		  key:    a,b,c
 		  
+		  arr:    4,2,1
+		  index:  0,1,2
+		  key:    e,b,a
 		  ```
 		-
