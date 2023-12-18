@@ -138,9 +138,22 @@
 		  }
 		  
 		  ```
-		-
-			-
-			-
+		- `forwardRef`
+		- ```
+		  //默认情况下，组件间不能直接调用ref,要使用forwardRef方法来传递ref给DOM
+		  MyInput = forwardRef((props,ref)=>{
+		  return (
+		  <input 
+		  {...props}
+		  ref={ref}></input>
+		  )
+		  })
+		  - function Form(){
+		  let inputRef = useRef(null)
+		  <MyIuput value={value} onClick={handleClick} ref={inputRef}>
+		  </MyInput>
+		  }
+		  ```
 		- 用于绑定dom元素，h5标签上有ref属性，通过useref定义的变量，在普通函数中可以修改dom
 		- useref还可以用来保存重新渲染时不需要更新的值
 		- 注意：**不要在渲染期间写入或者读取 `ref.current`**
