@@ -127,7 +127,7 @@
 		- state是只读不可写的,set方法是对整个state的替换,不能只修改state的某个地方,还要保存不变的属性,除非引入`immer`简化更新逻辑
 		- 可以给set方法传入一个更新函数而不是下一个状态,使得同一事件可以进行多次更新
 		- 可以对组件的key传入不同的值来重置组件的状态,每次渲染时react会对比组件key,若不同则会更新
-	- ## useEffect [useEffect中文教程](https://zh-hans.react.dev/reference/react/useEffect)
+	- ## useEffect [useEffect中文教程](https://zh-hans.react.dev/reference/react/useEffect) #card
 	  collapsed:: true
 		- 用于将组件与外部系统同步
 		- `useEffect(setup, dependencies?)`
