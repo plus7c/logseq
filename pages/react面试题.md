@@ -42,6 +42,12 @@
   collapsed:: true
 	- 它没有提供生命周期概念，不像 class 组件继承 React.component，可以让你使用生命周期以及特意强调相关概念
 - 使用Hooks要遵守哪些原则？ #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.6
+  card-next-schedule:: 2023-12-22T02:09:25.631Z
+  card-last-reviewed:: 2023-12-18T02:09:25.631Z
+  card-last-score:: 5
   collapsed:: true
 	- 1. 只在最顶层使用 Hook
 	- 2. 不要在循环，条件或嵌套函数中调用 Hook， 确保总是在你的 React 函数的最顶层调用他们。
