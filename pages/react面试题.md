@@ -126,7 +126,8 @@
 		- state是只读不可写的,set方法是对整个state的替换,不能只修改state的某个地方,还要保存不变的属性,除非引入`immer`简化更新逻辑
 		- 可以给set方法传入一个更新函数而不是下一个状态,使得同一事件可以进行多次更新
 		- 可以对组件的key传入不同的值来重置组件的状态,每次渲染时react会对比组件key,若不同则会更新
-	- useeffect用于当state值改变时调用对应的方法
+	- ### useEffect
+		- 用于将组件与外部系统同步
 		- `useEffect(setup, dependencies?)`
 		- > 当组件被添加到 DOM 的时候，React 将运行 setup 函数。在每次依赖项变更重新渲染后，React 将首先使用旧值运行 cleanup 函数（如果你提供了该函数），然后使用新值运行 setup 函数。在组件从 DOM 中移除后，React 将最后一次运行 cleanup 函数。
 		- setup选择性返回一个cleanup函数,用于清理旧值.而useEffect本身返回undefined,所以要单独使用
