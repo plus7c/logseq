@@ -18,6 +18,12 @@
 	- 高阶组件的这种实现方式，本质上是一个**装饰者**设计模式
 - 如何提高组件的渲染效率 #card #react
   collapsed:: true
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.6
+  card-next-schedule:: 2023-12-22T02:06:42.445Z
+  card-last-reviewed:: 2023-12-18T02:06:42.445Z
+  card-last-score:: 5
 	- 类组件：
 		- 1. 继承PureComponent
 		  2. 使用shouldComponentUpdate优化
