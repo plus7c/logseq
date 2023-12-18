@@ -114,8 +114,9 @@
 - Hook总结
 	- useState [useState中文教程](https://zh-hans.react.dev/reference/react/useState#updating-objects-and-arrays-in-state)
 		- 用于添加状态变量,useState(initialState)
-		- state相当于是一个快照,setSomething()的值直到下一次渲染前,
-		-
+		- state相当于是一个快照,直到下一次渲染前,setSomething()的值都不会起作用
+		- ```
+		  ```
 	- useeffect用于当state值改变时调用对应的方法
 	- useRef，用于引用一个不需要渲染的值
 	  collapsed:: true
