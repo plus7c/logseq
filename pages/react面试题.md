@@ -112,7 +112,9 @@
 			  ```
 		- keys的设置需要稳定，可预测（自增）和唯一性，否则会造成子组件性能下降和状态丢失。
 - Hook总结
+  collapsed:: true
 	- ## useState [useState中文教程](https://zh-hans.react.dev/reference/react/useState#updating-objects-and-arrays-in-state) #card
+	  collapsed:: true
 		- 用于添加状态变量,useState(initialState)
 		- state相当于是一个快照,直到下一次渲染前,setSomething()的值都不会起作用
 		- ```
@@ -200,7 +202,7 @@
 		- 除了普通memo值外，因函数也可以作为props传递给子组件，所以也可以对函数进行memo化，具体的步骤是将事件处理函数包裹在一个箭头函数中，然后返回它。为了避免重复嵌套，可以将函数包装到useCallback而不是useMemo中。
 		- 如果一个记忆化的计算函数中使依赖于在组件主体的对象，会破环记忆化，正确的写法应该把这个对象写入计算函数中,让这个对象也被记忆化。
 -
--
+- hydrate
 -
 -
 -
