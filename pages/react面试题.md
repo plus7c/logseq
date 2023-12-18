@@ -113,6 +113,7 @@
 		- keys的设置需要稳定，可预测（自增）和唯一性，否则会造成子组件性能下降和状态丢失。
 - Hook总结
 	- ## useState [useState中文教程](https://zh-hans.react.dev/reference/react/useState#updating-objects-and-arrays-in-state) #card
+	  collapsed:: true
 		- 用于添加状态变量,useState(initialState)
 		- state相当于是一个快照,直到下一次渲染前,setSomething()的值都不会起作用
 		- ```
@@ -131,7 +132,9 @@
 		- `useEffect(setup, dependencies?)`
 		- > 当组件被添加到 DOM 的时候，React 将运行 setup 函数。在每次依赖项变更重新渲染后，React 将首先使用旧值运行 cleanup 函数（如果你提供了该函数），然后使用新值运行 setup 函数。在组件从 DOM 中移除后，React 将最后一次运行 cleanup 函数。
 		- setup选择性返回一个cleanup函数,用于清理旧值.而useEffect本身返回undefined,所以要单独使用
-	- ## useRef [useRef中文教程](https://zh-hans.react.dev/reference/react/useRef)
+	- ## useRef [useRef中文教程](https://zh-hans.react.dev/reference/react/useRef) #card
+	  collapsed:: true
+		- 用于引用一个不需要渲染的值
 		- 用法：
 		- ```
 		  import {useRef} form "react"
