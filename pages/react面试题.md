@@ -127,7 +127,8 @@
 		- 可以给set方法传入一个更新函数而不是下一个状态,使得同一事件可以进行多次更新
 		- 可以对组件的key传入不同的值来重置组件的状态,每次渲染时react会对比组件key,若不同则会更新
 	- useeffect用于当state值改变时调用对应的方法
-	-
+		- `useEffect(setup, dependencies?)`
+		- setup
 	- useRef，用于引用一个不需要渲染的值
 	  collapsed:: true
 		- 用法：
