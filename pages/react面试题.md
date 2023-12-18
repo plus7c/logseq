@@ -111,6 +111,43 @@
 			  
 			  ```
 		- keys的设置需要稳定，可预测（自增）和唯一性，否则会造成子组件性能下降和状态丢失。
+- Hook总结
+	- useState用于设置state值和setState的方法
+	- useeffect用于当state值改变时调用对应的方法
+	- useRef，用于引用一个不需要渲染的值
+		- 用法：
+		- ```
+		  import {useRef} form "react"
+		  function Test(){
+		  
+		  let ref = useRef(initValue);
+		  value = ref.current//测试普通变量引用
+		  let inputRef = useRef(null);//测试DOM引用
+		  
+		  function handleChange(){
+		  	value = value + 1;
+		      inputRef.current.focus();
+		  }
+		  
+		  return (<>
+		  <buttom onClick={handleChange}></buttom>
+		  <input ref={inputRrf}>
+		  	{value}
+		  </input>
+		  </>)
+		  }
+		  
+		  ```
+		-
+			-
+			-
+		- 用于绑定dom元素，h5标签上有ref属性，通过useref定义的变量，在普通函数中可以修改dom
+		- useref还可以用来保存重新渲染时不需要更新的值
+		- 注意：**不要在渲染期间写入或者读取 `ref.current`**
+	- use
+-
+-
+-
 -
 - React的生命周期
   collapsed:: true
