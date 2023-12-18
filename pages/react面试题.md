@@ -128,7 +128,8 @@
 		- 可以对组件的key传入不同的值来重置组件的状态,每次渲染时react会对比组件key,若不同则会更新
 	- useeffect用于当state值改变时调用对应的方法
 		- `useEffect(setup, dependencies?)`
-		- setup
+		- > 当组件被添加到 DOM 的时候，React 将运行 setup 函数。在每次依赖项变更重新渲染后，React 将首先使用旧值运行 cleanup 函数（如果你提供了该函数），然后使用新值运行 setup 函数。在组件从 DOM 中移除后，React 将最后一次运行 cleanup 函数。
+		- setup选择性返回一个
 	- useRef，用于引用一个不需要渲染的值
 	  collapsed:: true
 		- 用法：
