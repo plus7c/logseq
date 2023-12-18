@@ -129,7 +129,7 @@
 	- useeffect用于当state值改变时调用对应的方法
 		- `useEffect(setup, dependencies?)`
 		- > 当组件被添加到 DOM 的时候，React 将运行 setup 函数。在每次依赖项变更重新渲染后，React 将首先使用旧值运行 cleanup 函数（如果你提供了该函数），然后使用新值运行 setup 函数。在组件从 DOM 中移除后，React 将最后一次运行 cleanup 函数。
-		- setup选择性返回一个
+		- setup选择性返回一个cleanup函数,用于清理旧值.而useEffect本身返回undefined,所以要单独使用
 	- useRef，用于引用一个不需要渲染的值
 	  collapsed:: true
 		- 用法：
