@@ -160,9 +160,9 @@
 		- 注意：**不要在渲染期间写入或者读取 `ref.current`**
 	- useMemo
 		- > 在每次重新渲染的时候能够缓存计算的结果
-		- 用法：useMemo(calculateValue,denpendencies)
+		- 用法：memo = useMemo(calculateValue,denpendencies)
 		- 如果依赖项数组中的值没有改变，则不会重新计算calculateValue
-		-
+		- 如果memo值没有改变，则传递给子组件的props也没有
 -
 -
 -
