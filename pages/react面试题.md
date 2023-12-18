@@ -112,8 +112,9 @@
 			  ```
 		- keys的设置需要稳定，可预测（自增）和唯一性，否则会造成子组件性能下降和状态丢失。
 - Hook总结
-	- useState ()
-		- 用于添加状态变量
+	- useState [useState中文教程](https://zh-hans.react.dev/reference/react/useState#updating-objects-and-arrays-in-state)
+		- 用于添加状态变量,useState(initialState)
+		-
 		-
 	- useeffect用于当state值改变时调用对应的方法
 	- useRef，用于引用一个不需要渲染的值
