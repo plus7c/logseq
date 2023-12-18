@@ -144,6 +144,7 @@
 		      return clearInterval(id);
 		  },[])
 		  ```
+		- 删除Effect不必要的依赖--组件渲染期间创建的对象和函数,相应地,应该把它写到Effect内部,
 	- ## useRef [useRef中文教程](https://zh-hans.react.dev/reference/react/useRef) #card
 	  collapsed:: true
 		- 用于引用一个不需要渲染的值
