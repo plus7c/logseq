@@ -119,7 +119,7 @@
 		  const [state,setState] = useState(null)
 		  
 		  funtion handleClick(){
-		  	setState(1)
+		  	setState(1)//延迟执行,批处理更新
 		      console.log(state) // 打印出来的是null,在下一次渲染时将state改为1
 		  }
 		  ```
