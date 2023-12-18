@@ -135,6 +135,14 @@
 		- 如果不传递依赖项数组,则每次渲染都会运行,如果传递空依赖数组,则只会在初次渲染时调用
 		- 当需要根据先前的状态来更新状态时,可以在setState中传入一个更新函数
 		- ```
+		  const [count,setCount] = useState(0)
+		  
+		  useEffect(()=>{
+		  	const id = setInterval(()=>{
+		  		setCount(c=>c+1)
+		  	},1000);
+		      return clearInterval(id);
+		  },[])
 		  ```
 	- ## useRef [useRef中文教程](https://zh-hans.react.dev/reference/react/useRef) #card
 	  collapsed:: true
