@@ -123,7 +123,8 @@
 		      console.log(state) // 打印出来的是null,在下一次渲染时将state改为1
 		  }
 		  ```
-	- useeffect用于当state值改变时调用对应的方法
+		- state是只读不可写的,set方法是对整个state的替换,不能只修改state的
+	- /useeffect用于当state值改变时调用对应的方法
 	- useRef，用于引用一个不需要渲染的值
 	  collapsed:: true
 		- 用法：
