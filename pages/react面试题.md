@@ -70,6 +70,12 @@
 		- 性能优化上，类组件依靠shouldComponentUpdate阻断渲染提升性能，而函数组件依靠react.memo缓存渲染结果提升性能。
 		-
 - Rreconciliation（和解算法） #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.6
+  card-next-schedule:: 2023-12-22T02:11:25.447Z
+  card-last-reviewed:: 2023-12-18T02:11:25.448Z
+  card-last-score:: 5
   collapsed:: true
 	- 背景：在比较两棵树的所有节点是否相同时，递归遍历的时间复杂度是O(n^3)，而一棵react树中有很多结点，这样比较显然是性能低下的，因此提出了启发式算法来进行DOM tree diff。
 	- 两大原则：
