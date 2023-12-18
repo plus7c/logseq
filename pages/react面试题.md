@@ -124,7 +124,7 @@
 		  }
 		  ```
 		- state是只读不可写的,set方法是对整个state的替换,不能只修改state的某个地方,还要保存不变的属性,除非引入`immer`简化更新逻辑
-		-
+		- 可以给set方法传入一个更新函数而不是下一个状态,
 	- /useeffect用于当state值改变时调用对应的方法
 	- useRef，用于引用一个不需要渲染的值
 	  collapsed:: true
