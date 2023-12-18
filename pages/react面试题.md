@@ -112,7 +112,7 @@
 			  ```
 		- keys的设置需要稳定，可预测（自增）和唯一性，否则会造成子组件性能下降和状态丢失。
 - Hook总结
-	- useState [useState中文教程](https://zh-hans.react.dev/reference/react/useState#updating-objects-and-arrays-in-state) #card
+	- ## useState [useState中文教程](https://zh-hans.react.dev/reference/react/useState#updating-objects-and-arrays-in-state) #card
 		- 用于添加状态变量,useState(initialState)
 		- state相当于是一个快照,直到下一次渲染前,setSomething()的值都不会起作用
 		- ```
@@ -126,12 +126,12 @@
 		- state是只读不可写的,set方法是对整个state的替换,不能只修改state的某个地方,还要保存不变的属性,除非引入`immer`简化更新逻辑
 		- 可以给set方法传入一个更新函数而不是下一个状态,使得同一事件可以进行多次更新
 		- 可以对组件的key传入不同的值来重置组件的状态,每次渲染时react会对比组件key,若不同则会更新
-	- ### useEffect
+	- ## useEffect [useEffect中文教程](https://zh-hans.react.dev/reference/react/useEffect)
 		- 用于将组件与外部系统同步
 		- `useEffect(setup, dependencies?)`
 		- > 当组件被添加到 DOM 的时候，React 将运行 setup 函数。在每次依赖项变更重新渲染后，React 将首先使用旧值运行 cleanup 函数（如果你提供了该函数），然后使用新值运行 setup 函数。在组件从 DOM 中移除后，React 将最后一次运行 cleanup 函数。
 		- setup选择性返回一个cleanup函数,用于清理旧值.而useEffect本身返回undefined,所以要单独使用
-	- useRef，用于引用一个不需要渲染的值
+	- useRef，
 	  collapsed:: true
 		- 用法：
 		- ```
@@ -175,6 +175,7 @@
 		- 用于绑定dom元素，h5标签上有ref属性，通过useref定义的变量，在普通函数中可以修改dom
 		- useref还可以用来保存重新渲染时不需要更新的值
 		- 注意：**不要在渲染期间写入或者读取 `ref.current`**
+	- 用于引用一个不需要渲染的值
 	- useMemo [useMemo中文教程](https://zh-hans.react.dev/reference/react/useMemo#) #card
 	  collapsed:: true
 		- > 在每次重新渲染的时候能够缓存计算的结果
