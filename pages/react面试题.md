@@ -33,6 +33,12 @@
 		  3. 使用useCallback缓存函数
 		  4. 循环添加key, key最好用数组项的唯一值，不推荐用 index
 - 函数式组件有没有生命周期？#card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.6
+  card-next-schedule:: 2023-12-22T02:06:53.839Z
+  card-last-reviewed:: 2023-12-18T02:06:53.839Z
+  card-last-score:: 5
   collapsed:: true
 	- 它没有提供生命周期概念，不像 class 组件继承 React.component，可以让你使用生命周期以及特意强调相关概念
 - 使用Hooks要遵守哪些原则？ #card
