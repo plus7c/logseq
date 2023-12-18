@@ -163,7 +163,7 @@
 		- 用法：memo = useMemo(calculateValue,denpendencies)
 		- 如果依赖项数组中的值没有改变，则不会重新计算calculateValue
 		- 如果memo值没有改变，则传递给子组件的props也没有改变，可以让子组件避免重复渲染
-		- 除了普通memo值外，因函数也可以作为props传递给子组件，所以也可以对函数进行memo化，具体的步骤是将事件处理函数包裹在一个箭头函数中，然后返回它。为了避免
+		- 除了普通memo值外，因函数也可以作为props传递给子组件，所以也可以对函数进行memo化，具体的步骤是将事件处理函数包裹在一个箭头函数中，然后返回它。为了避免重复嵌套，可以将函数包装到useCallback而不是useMemo中。
 -
 -
 -
