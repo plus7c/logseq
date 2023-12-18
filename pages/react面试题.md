@@ -163,6 +163,7 @@
 		- 用法：memo = useMemo(calculateValue,denpendencies)
 		- 如果依赖项数组中的值没有改变，则不会重新计算calculateValue
 		- 如果memo值没有改变，则传递给子组件的props也没有改变，可以让子组件避免重复渲染
+		- 除了普通值外
 -
 -
 -
