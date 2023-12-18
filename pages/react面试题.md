@@ -112,7 +112,7 @@
 			  ```
 		- keys的设置需要稳定，可预测（自增）和唯一性，否则会造成子组件性能下降和状态丢失。
 - Hook总结
-	- useState [useState中文教程](https://zh-hans.react.dev/reference/react/useState#updating-objects-and-arrays-in-state)
+	- useState [useState中文教程](https://zh-hans.react.dev/reference/react/useState#updating-objects-and-arrays-in-state) #card
 		- 用于添加状态变量,useState(initialState)
 		- state相当于是一个快照,直到下一次渲染前,setSomething()的值都不会起作用
 		- ```
@@ -126,7 +126,7 @@
 		- state是只读不可写的,set方法是对整个state的替换,不能只修改state的某个地方,还要保存不变的属性,除非引入`immer`简化更新逻辑
 		- 可以给set方法传入一个更新函数而不是下一个状态,使得同一事件可以进行多次更新
 		- 可以对组件的key传入不同的值来重置组件的状态,每次渲染时react会对比组件key,若不同则会更新
-	- /useeffect用于当state值改变时调用对应的方法
+	- useeffect用于当state值改变时调用对应的方法
 	- useRef，用于引用一个不需要渲染的值
 	  collapsed:: true
 		- 用法：
