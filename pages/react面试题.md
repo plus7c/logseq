@@ -131,8 +131,7 @@
 		- `useEffect(setup, dependencies?)`
 		- > 当组件被添加到 DOM 的时候，React 将运行 setup 函数。在每次依赖项变更重新渲染后，React 将首先使用旧值运行 cleanup 函数（如果你提供了该函数），然后使用新值运行 setup 函数。在组件从 DOM 中移除后，React 将最后一次运行 cleanup 函数。
 		- setup选择性返回一个cleanup函数,用于清理旧值.而useEffect本身返回undefined,所以要单独使用
-	- useRef，
-	  collapsed:: true
+	- ## useRef [useRef中文教程](https://zh-hans.react.dev/reference/react/useRef)
 		- 用法：
 		- ```
 		  import {useRef} form "react"
@@ -175,8 +174,8 @@
 		- 用于绑定dom元素，h5标签上有ref属性，通过useref定义的变量，在普通函数中可以修改dom
 		- useref还可以用来保存重新渲染时不需要更新的值
 		- 注意：**不要在渲染期间写入或者读取 `ref.current`**
-	- 用于引用一个不需要渲染的值
-	- useMemo [useMemo中文教程](https://zh-hans.react.dev/reference/react/useMemo#) #card
+		-
+	- ## useMemo [useMemo中文教程](https://zh-hans.react.dev/reference/react/useMemo#) #card
 	  collapsed:: true
 		- > 在每次重新渲染的时候能够缓存计算的结果
 		- 用法：memo = useMemo(calculateValue,denpendencies)
