@@ -2,6 +2,12 @@
 -
 - 高阶函数（Higher-order function），至少满足下列一个条件的函数 #card #react
   collapsed:: true
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.6
+  card-next-schedule:: 2023-12-22T02:04:43.358Z
+  card-last-reviewed:: 2023-12-18T02:04:43.358Z
+  card-last-score:: 5
 	- 1、接受一个或多个函数作为输入
 	  2、输出一个函数
 	  在React中，高阶组件即接受一个或多个组件作为参数并且返回一个组件，本质也就是一个函数，并不是一个组件，例如：
@@ -32,6 +38,12 @@
 	- ✅ 在 React 的函数组件中调用 Hook
 	  ✅ 在自定义 Hook 中调用其他 Hook
 - 类组件和函数组件的异同？ #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.6
+  card-next-schedule:: 2023-12-22T02:04:22.406Z
+  card-last-reviewed:: 2023-12-18T02:04:22.407Z
+  card-last-score:: 5
   collapsed:: true
 	- 相同点：都是构建UI的最小单元，它们之间可以相互转化，但在开发过程中没有这个必要，在闭包的性能上两者没有太大的区别
 	- 不同点：
