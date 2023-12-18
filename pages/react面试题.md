@@ -116,6 +116,12 @@
 		- 用于添加状态变量,useState(initialState)
 		- state相当于是一个快照,直到下一次渲染前,setSomething()的值都不会起作用
 		- ```
+		  const [state,setState] = useState(null)
+		  
+		  funtion handleClick(){
+		  	setState(1)
+		      console.log(state) // 打印出来的是null,因为此时state
+		  }
 		  ```
 	- useeffect用于当state值改变时调用对应的方法
 	- useRef，用于引用一个不需要渲染的值
