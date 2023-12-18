@@ -158,7 +158,7 @@
 		- 用于绑定dom元素，h5标签上有ref属性，通过useref定义的变量，在普通函数中可以修改dom
 		- useref还可以用来保存重新渲染时不需要更新的值
 		- 注意：**不要在渲染期间写入或者读取 `ref.current`**
-	- useMemo
+	- useMemo [useMemo中文教程](https://zh-hans.react.dev/reference/react/useMemo#)
 		- > 在每次重新渲染的时候能够缓存计算的结果
 		- 用法：memo = useMemo(calculateValue,denpendencies)
 		- 如果依赖项数组中的值没有改变，则不会重新计算calculateValue
