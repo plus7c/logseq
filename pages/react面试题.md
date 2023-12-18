@@ -133,7 +133,9 @@
 		- setup选择性返回一个cleanup函数,用于清理旧值.而useEffect本身返回undefined,所以要单独使用
 		- > Effect 代码中使用的每个`响应式值`都必须声明为依赖项
 		- 如果不传递依赖项数组,则每次渲染都会运行,如果传递空依赖数组,则只会在初次渲染时调用
-		-
+		- 当需要根据先前的状态来更新状态时,可以在setState中传入一个更新函数
+		- ```
+		  ```
 	- ## useRef [useRef中文教程](https://zh-hans.react.dev/reference/react/useRef) #card
 	  collapsed:: true
 		- 用于引用一个不需要渲染的值
