@@ -120,7 +120,7 @@
 		  
 		  funtion handleClick(){
 		  	setState(1)
-		      console.log(state) // 打印出来的是null,因为此时state
+		      console.log(state) // 打印出来的是null,在下一次渲染时将state改为1
 		  }
 		  ```
 	- useeffect用于当state值改变时调用对应的方法
