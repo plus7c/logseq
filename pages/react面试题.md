@@ -112,7 +112,6 @@
 			  ```
 		- keys的设置需要稳定，可预测（自增）和唯一性，否则会造成子组件性能下降和状态丢失。
 - Hook总结
-  collapsed:: true
 	- ## useState [useState中文教程](https://zh-hans.react.dev/reference/react/useState#updating-objects-and-arrays-in-state) #card
 	  collapsed:: true
 		- 用于添加状态变量,useState(initialState)
@@ -129,6 +128,7 @@
 		- 可以给set方法传入一个更新函数而不是下一个状态,使得同一事件可以进行多次更新
 		- 可以对组件的key传入不同的值来重置组件的状态,每次渲染时react会对比组件key,若不同则会更新
 	- ## useEffect [useEffect中文教程](https://zh-hans.react.dev/reference/react/useEffect)
+	  collapsed:: true
 		- 用于将组件与外部系统同步
 		- `useEffect(setup, dependencies?)`
 		- > 当组件被添加到 DOM 的时候，React 将运行 setup 函数。在每次依赖项变更重新渲染后，React 将首先使用旧值运行 cleanup 函数（如果你提供了该函数），然后使用新值运行 setup 函数。在组件从 DOM 中移除后，React 将最后一次运行 cleanup 函数。
@@ -202,7 +202,7 @@
 		- 除了普通memo值外，因函数也可以作为props传递给子组件，所以也可以对函数进行memo化，具体的步骤是将事件处理函数包裹在一个箭头函数中，然后返回它。为了避免重复嵌套，可以将函数包装到useCallback而不是useMemo中。
 		- 如果一个记忆化的计算函数中使依赖于在组件主体的对象，会破环记忆化，正确的写法应该把这个对象写入计算函数中,让这个对象也被记忆化。
 -
-- hydrate指在服务端生成的html基础上
+- hydrate指客户端在服务端生成的html基础上,复苏浏览器的DOM结点和react组件
 -
 -
 -
