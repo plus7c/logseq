@@ -111,7 +111,8 @@
 			  
 			  ```
 		- keys的设置需要稳定，可预测（自增）和唯一性，否则会造成子组件性能下降和状态丢失。
-- Hook总结
+- Hook总结 #card
+  collapsed:: true
 	- ## useState [useState中文教程](https://zh-hans.react.dev/reference/react/useState#updating-objects-and-arrays-in-state) #card
 	  collapsed:: true
 		- 用于添加状态变量,useState(initialState)
@@ -201,7 +202,26 @@
 		- 如果memo值没有改变，则传递给子组件的props也没有改变，可以让子组件避免重复渲染
 		- 除了普通memo值外，因函数也可以作为props传递给子组件，所以也可以对函数进行memo化，具体的步骤是将事件处理函数包裹在一个箭头函数中，然后返回它。为了避免重复嵌套，可以将函数包装到useCallback而不是useMemo中。
 		- 如果一个记忆化的计算函数中使依赖于在组件主体的对象，会破环记忆化，正确的写法应该把这个对象写入计算函数中,让这个对象也被记忆化。
--
+- hook的使用限制，为什么不能写在条件判断和循环语句中？#card
+  collapsed:: true
+	- useState举例，组件使用useState后，会维护一个存放state的表，比如说state1放在数组下标为0的元素中，state2存放在数组下标为2的元素中，如果在条件判断中使用，
+	- useState的使用过程。首次渲染的时候调用useState，给state赋初始值和set方法，在调用set方法的时候，赋予新值给state，然后重新渲染该组件，重新调用useState（state值不能在useState中声明，不然每次返回的都是初始值），如果state非undefined，则跳过。但组件可能会有多个state，所以建立一个state表来保存state值。在组件中使用useState就有了顺序，不同的set方法会重新设置state表中对应的值。如果在条件判断中使用set方法，会打乱存放state的表。
+- react事件机制 #card
+  collapsed:: true
+	- 为什么要提出react的事件机制？
+		- 兼容各浏览器的规范
+		- 开发友好
+		- 统一管理监听事件，减少内存消耗和动态绑定事件，
+	- react事件机制是什么
+		- 要弄懂react事件机制，我们先要了解原生的机制是怎样的。
+		- 原生事件有三个阶段，分别是 捕获阶段->目标阶段->冒泡阶段，但事件被触发时，会从顶层对象document开始向下捕获。捕获到目标结点后，调用该事件的监听函数。然后开始向上冒泡，途中如果有其他监听函数则也会被一一调用，也可以设置e.stopPagination()停止冒泡。
+		- 基于浏览器的事件机制，react提出了合成事件。所有合成事件在document结点上触发。
+		- ||原生事件|React事件|
+		  |--|--|--|
+		  |监听事件命名方式|全小写 onclick、onblur、onchange等等|驼峰式命名法 onClick|
+		  |事件处理函数的语法|字符串的形式 onclick = "handleClick()"|函数的形式 onClick = {handleClick}|
+		  |阻止浏览器默认行为的方法|事件处理函数中返回false|使用e.preventDefault()的方法|
+		-
 - hydrate指客户端在服务端生成的html基础上,复苏浏览器的DOM结点和react组件
 -
 -
