@@ -17,7 +17,6 @@
 	  上述代码中，该函数接受一个组件 WrappedComponent 作为参数，返回加工过的新组件 EnhancedComponent
 	- 高阶组件的这种实现方式，本质上是一个**装饰者**设计模式
 - 如何提高组件的渲染效率 #card #react
-  collapsed:: true
   card-last-interval:: -1
   card-repeats:: 0
   card-ease-factor:: 2.5
