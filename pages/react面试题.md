@@ -192,6 +192,7 @@
 		- 注意：**不要在渲染期间写入或者读取 `ref.current`**
 		-
 	- ## useMemo [useMemo中文教程](https://zh-hans.react.dev/reference/react/useMemo#) #card
+	  collapsed:: true
 		- > 在每次重新渲染的时候能够缓存计算的结果
 		- 用法：memo = useMemo(calculateValue,denpendencies)
 		- 如果依赖项数组中的值没有改变，则不会重新计算calculateValue
@@ -224,7 +225,6 @@
 -
 -
 - React的生命周期
-  collapsed:: true
 	- ![](https://cdn.nlark.com/yuque/0/2021/png/1500604/1611914193870-a5a93315-a094-40aa-959a-e3e3c58c8a96.png){:height 368, :width 586}
 	-
 -
