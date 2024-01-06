@@ -14,7 +14,7 @@
 			- A：这样一来，每次提的 Merge Request 里就不会带上别人的 commit。而 merge release => 你的分支，会将别人的 commit 带到你的 Merge Request 里，不利于比较代码 diff。
 		- gitlab上feature => release 走MR流程
 		- 发布窗口时，将release分支发布到PRD环境
-	-
+	- 当开发完一个需求后要将dev合并到master上
 -
 - # 开发完后如何部署到van的stg环境上
 	- 先commit和push 自己的开发分支到服务器上
