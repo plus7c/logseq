@@ -112,6 +112,7 @@
 		- keys的设置需要稳定，可预测（自增）和唯一性，否则会造成子组件性能下降和状态丢失。
 - Hook总结 #card
 	- ## useState [useState中文教程](https://zh-hans.react.dev/reference/react/useState#updating-objects-and-arrays-in-state) #card
+	  collapsed:: true
 		- 用于添加状态变量,useState(initialState)
 		- state相当于是一个快照,直到下一次渲染前,setSomething()的值都不会起作用
 		- ```
@@ -146,6 +147,7 @@
 		  ```
 		- 删除Effect不必要的依赖--组件渲染期间创建的对象和函数(每次渲染都是不同的对象),相应地,应该把它写到Effect内部,避免在组件重新渲染的时候多次调用Effect.
 	- ## useRef [useRef中文教程](https://zh-hans.react.dev/reference/react/useRef) #card
+	  collapsed:: true
 		- 用于引用一个不需要渲染的值
 		- 用法：
 		- ```
@@ -191,7 +193,6 @@
 		- 注意：**不要在渲染期间写入或者读取 `ref.current`**
 		-
 	- ## useMemo [useMemo中文教程](https://zh-hans.react.dev/reference/react/useMemo#) #card
-	  collapsed:: true
 		- > 在每次重新渲染的时候能够缓存计算的结果
 		- 用法：memo = useMemo(calculateValue,denpendencies)
 		- 如果依赖项数组中的值没有改变，则不会重新计算calculateValue
