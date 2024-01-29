@@ -112,7 +112,6 @@
 		- keys的设置需要稳定，可预测（自增）和唯一性，否则会造成子组件性能下降和状态丢失。
 - Hook总结 #card
 	- ## useState [useState中文教程](https://zh-hans.react.dev/reference/react/useState#updating-objects-and-arrays-in-state) #card
-	  collapsed:: true
 		- 用于添加状态变量,useState(initialState)
 		- state相当于是一个快照,直到下一次渲染前,setSomething()的值都不会起作用
 		- ```
