@@ -112,6 +112,7 @@
 		- keys的设置需要稳定，可预测（自增）和唯一性，否则会造成子组件性能下降和状态丢失。
 - Hook总结 #card
 	- ## useState [useState中文教程](https://zh-hans.react.dev/reference/react/useState#updating-objects-and-arrays-in-state) #card
+	  collapsed:: true
 		- 用于添加状态变量,useState(initialState)
 		- state相当于是一个快照,直到下一次渲染前,setSomething()的值都不会起作用
 		- ```
@@ -126,6 +127,16 @@
 		- 可以给set方法传入一个更新函数而不是下一个状态,使得同一事件可以进行多次更新
 		- 可以对组件的key传入不同的值来重置组件的状态,每次渲染时react会对比组件key,若不同则会更新
 	- ## useEffect [useEffect中文教程](https://zh-hans.react.dev/reference/react/useEffect) #card
+<<<<<<< HEAD
+=======
+	  collapsed:: true
+	  card-last-interval:: 4
+	  card-repeats:: 1
+	  card-ease-factor:: 2.6
+	  card-next-schedule:: 2024-01-16T14:03:30.826Z
+	  card-last-reviewed:: 2024-01-12T14:03:30.826Z
+	  card-last-score:: 5
+>>>>>>> 02912379228e38818bae611fc225bebbd6e2187c
 		- 用于将组件与外部系统同步
 		- `useEffect(setup, dependencies?)`
 		- > 当组件被添加到 DOM 的时候，React 将运行 setup 函数。在每次依赖项变更重新渲染后，React 将首先使用旧值运行 cleanup 函数（如果你提供了该函数），然后使用新值运行 setup 函数。在组件从 DOM 中移除后，React 将最后一次运行 cleanup 函数。
@@ -201,6 +212,12 @@
 	- useState举例，组件使用useState后，会维护一个存放state的表，比如说state1放在数组下标为0的元素中，state2存放在数组下标为2的元素中，如果在条件判断中使用，
 	- useState的使用过程。首次渲染的时候调用useState，给state赋初始值和set方法，在调用set方法的时候，赋予新值给state，然后重新渲染该组件，重新调用useState（state值不能在useState中声明，不然每次返回的都是初始值），如果state非undefined，则跳过。但组件可能会有多个state，所以建立一个state表来保存state值。在组件中使用useState就有了顺序，不同的set方法会重新设置state表中对应的值。如果在条件判断中使用set方法，会打乱存放state的表。
 - react事件机制 #card
+  card-last-interval:: 4
+  card-repeats:: 1
+  card-ease-factor:: 2.6
+  card-next-schedule:: 2024-01-16T14:03:28.189Z
+  card-last-reviewed:: 2024-01-12T14:03:28.189Z
+  card-last-score:: 5
   collapsed:: true
 	- 为什么要提出react的事件机制？
 		- 兼容各浏览器的规范
