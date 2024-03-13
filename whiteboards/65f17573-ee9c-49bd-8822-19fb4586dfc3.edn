@@ -1,0 +1,68 @@
+{:blocks (
+{:block/created-at 1710323083407
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke ""
+:borderRadius 2
+:index 0
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "box"
+:size [504 272]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:label ""
+:id "4e901d00-e11e-11ee-8c90-0f0b89b2bb6f"
+:fontWeight 400
+:noFill false
+:point [96 176]
+:fontSize 20
+:parentId "65f17573-ee9c-49bd-8822-19fb4586dfc3"
+:nonce 1710323077940
+:italic false}}
+:block/updated-at 1710323083407} 
+{:block/created-at 1710323121611
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke "pink"
+:borderRadius 2
+:index 1
+:scale [1 1]
+:scaleLevel "md"
+:fill "pink"
+:type "box"
+:size [56 224]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:label "可报备内容"
+:id "608c4ce0-e11e-11ee-8c90-0f0b89b2bb6f"
+:fontWeight 400
+:noFill false
+:point [120 192]
+:fontSize 20
+:parentId "65f17573-ee9c-49bd-8822-19fb4586dfc3"
+:nonce 1710323108105
+:italic false}}
+:block/updated-at 1710323121611})
+:pages (
+{:block/uuid #uuid "65f17573-ee9c-49bd-8822-19fb4586dfc3"
+:block/properties 
+{:ls-type :whiteboard-page
+:logseq.tldraw.page 
+{:id "65f17573-ee9c-49bd-8822-19fb4586dfc3"
+:name "65f17573-ee9c-49bd-8822-19fb4586dfc3"
+:bindings 
+{}
+:nonce 1
+:assets []
+:shapes-index ("4e901d00-e11e-11ee-8c90-0f0b89b2bb6f" "608c4ce0-e11e-11ee-8c90-0f0b89b2bb6f")}}
+:block/updated-at 1710323121611
+:block/created-at 1710323059165
+:block/type "whiteboard"
+:block/name "65f17573-ee9c-49bd-8822-19fb4586dfc3"
+:block/original-name "65f17573-ee9c-49bd-8822-19fb4586dfc3"})}
